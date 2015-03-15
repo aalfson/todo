@@ -15,3 +15,7 @@
  */
 
 body { padding: 30px 60px 20px 60px !important }
+
+.description { margin-left: 10px;}
+
+.task-list { list-style-type: none; }

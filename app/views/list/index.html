@@ -2,10 +2,14 @@
   <h2>Task Manager</h2>
   <hr>
 
+  <%= csrf_meta_tag %>
+
   <div ng-controller='tasks'>
 
-    <ul>
-      <li ng-repeat='task in tasks'>{{task.description}}</li>
+    <ul class='task-list'>
+      <li ng-repeat='task in tasks'>
+        <input type='checkbox' ng-checked="{{task.completed}}" class='completed' ng-click="updateCompleted($index)"><span class='description'>{{task.description}}</span>{{task.completed}}
+      </li>
     </ul>
 
   </div> <!-- end 'tasksController' -->

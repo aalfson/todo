@@ -7,6 +7,9 @@ Rails.application.routes.draw do
 
   root 'list#index'
 
+  get '/tasks' => 'list#tasks'
+  post '/tasks/completed' => 'list#completed'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
