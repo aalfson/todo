@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo</title>
+  
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/zurb/foundation-apps-1.0.3.min.css">
+  
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script type="text/javascript" src='http://cdn.jsdelivr.net/zurb/foundation-apps-1.0.3.min.js'></script>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

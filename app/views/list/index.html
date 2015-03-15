@@ -1,0 +1,12 @@
+<div ng-app="taskManager">
+  <h2>Task Manager</h2>
+  <hr>
+
+  <div ng-controller='tasks'>
+
+    <ul>
+      <li ng-repeat='task in tasks'>{{task.description}}</li>
+    </ul>
+
+  </div> <!-- end 'tasksController' -->
+</div> <!-- end 'taskManager' -->
