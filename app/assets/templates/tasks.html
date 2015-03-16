@@ -1,0 +1,11 @@
+<div ng-controller='tasks'>
+
+  <ul class='task-list'>
+    <li ng-repeat='task in tasks'>
+      <input type='checkbox' ng-checked="{{task.completed}}" class='completed' ng-click="updateCompleted($index)"><span class='description'>{{task.description}}</span>
+    </li>
+  </ul>
+
+  <a href="#/new">New Task</a>
+
+</div>

@@ -16,4 +16,9 @@ class ListController < ApplicationController
     render json: task
   end
 
+  def create
+    task = Task.create(description: params[:description])
+    render json: task
+  end
+
 end
